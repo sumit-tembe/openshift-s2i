@@ -16,8 +16,7 @@ FROM openshift/base-centos7
 # TODO: Install required packages here:
 # RUN yum install -y ... && yum clean all -y
 RUN yum install -y python && yum clean all -y
-COPY . /app
-WORKDIR /app
+COPY . .
 EXPOSE 5000
 
 # TODO (optional): Copy the builder files into /opt/app-root
