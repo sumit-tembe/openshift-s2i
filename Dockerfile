@@ -15,7 +15,7 @@ FROM openshift/base-centos7
 
 # TODO: Install required packages here:
 # RUN yum install -y ... && yum clean all -y
-RUN yum install -y python && python-pip && yum clean all -y
+RUN yum install -y python python-pip && yum clean all -y
 COPY . .
 EXPOSE 5000
 
